@@ -23,17 +23,9 @@ All components run locally.
 
 ## Documentation
 
-Getting Started  
-docs/01-getting-started.md  
-Initial setup steps and deployment process.
-
-Lab Architecture  
-docs/02-lab-architecture.md  
-Topology layout and design rationale.
-
-Ansible Basics  
-docs/03-ansible-basics.md  
-Core Ansible concepts and notes from building the lab.
+- [Getting Started](docs/01-getting-started.md)
+- [Lab Architecture](docs/02-lab-architecture.md)
+- [Ansible Basics](docs/03-ansible-basics.md)
 
 ---
 
