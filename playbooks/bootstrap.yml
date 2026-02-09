@@ -1,0 +1,7 @@
+- name: Bootstrap lab nodes
+  hosts: aaa
+  gather_facts: false
+  tasks:
+    - name: Install python3 (needed for Ansible modules)
+      ansible.builtin.raw: apt-get update && apt-get install -y python3
+      changed_when: true

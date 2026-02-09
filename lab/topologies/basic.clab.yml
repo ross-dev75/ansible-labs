@@ -1,0 +1,28 @@
+name: basic
+topology:
+  nodes:
+    r1:
+      kind: linux
+      image: frrouting/frr:latest
+    r2:
+      kind: linux
+      image: frrouting/frr:latest
+    radius:
+      kind: linux
+      image: ubuntu:22.04
+    pc1:
+      kind: linux
+      image: alpine:latest
+    pc2:
+      kind: linux
+      image: alpine:latest
+
+  links:
+    # router connections
+    - endpoints: ["r1:eth1", "r2:eth1"]
+    # router connections to radius server
+    - endpoints: ["r1:eth2", "radius:eth1"]
+    - endpoints: ["r2:eth2", "radius:eth2"]
+    # router connections to workstations pc1 and pc2
+    - endpoints: ["pc1:eth1", "r1:eth3"]
+    - endpoints: ["pc2:eth1", "r2:eth3"]
