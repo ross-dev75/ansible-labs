@@ -31,11 +31,15 @@ All components run locally.
 
 ## Quick Start
 
-Deploy the lab:
+1) Deploy the lab:
 
 sudo containerlab deploy -t lab/topologies/basic.clab.yml
 
-Verify Ansible connectivity:
+2) Bootstrap python to the 'aaa' and 'workstations' group:
+
+ansible-playbook -i inventories/lab/hosts.yml playbooks/bootstrap.yml
+
+3) Verify Ansible connectivity:
 
 ansible all -m ping -i inventories/lab/hosts.yml
 
@@ -62,4 +66,5 @@ This lab is used to practice:
 ## Status
 
 This is an active learning environment that will expand over time as additional scenarios and tools are tested.
+
 
