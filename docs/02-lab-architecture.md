@@ -8,21 +8,27 @@ The goal of this lab architecture is to simulate a small, realistic network envi
 
 # Topology Overview
 
-The lab consists of three main nodes:
+The lab consists of five main nodes:
 
 - r1 (FRR router container)
 - r2 (FRR router container)
 - radius (Ubuntu container acting as AAA server)
+- pc1 (Alpine (Linux) container acting as a workstation)
+- -pc2 (Alpine (Linux) container acting as a workstation)
 
 Logical connections:
 
-r1 ↔ r2  
-r1 ↔ radius  
+r1 <> r2  
+r1 <> radius  
+r2 <> radius
+r1 <> pc1
+r2 <> pc2
 
 This simulates:
 
 - Router-to-router communication
 - Router-to-AAA server communication
+- Workstations connected to different routers
 - Multi-node automation scenarios
 
 ---
