@@ -14,7 +14,7 @@ The lab consists of five main nodes:
 - r2 (FRR router container)
 - radius (Ubuntu container acting as AAA server)
 - pc1 (Alpine (Linux) container acting as a workstation)
-- -pc2 (Alpine (Linux) container acting as a workstation)
+- pc2 (Alpine (Linux) container acting as a workstation)
 
 Logical connections:
 
