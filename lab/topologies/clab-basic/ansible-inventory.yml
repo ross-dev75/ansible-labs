@@ -7,9 +7,13 @@ all:
   children:
     linux:
       hosts:
-        clab-basic-r1:
-          ansible_host: 172.20.20.2
-        clab-basic-r2:
-          ansible_host: 172.20.20.3
-        clab-basic-radius:
+        clab-basic-pc1:
           ansible_host: 172.20.20.4
+        clab-basic-pc2:
+          ansible_host: 172.20.20.3
+        clab-basic-r1:
+          ansible_host: 172.20.20.6
+        clab-basic-r2:
+          ansible_host: 172.20.20.2
+        clab-basic-radius:
+          ansible_host: 172.20.20.5

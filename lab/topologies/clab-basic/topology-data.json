@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-238aa849240c",
+        "bridge": "br-fb1ebdf17fba",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
@@ -17,8 +17,70 @@
   },
   "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPJ4Vdtj+LWtVf0ZAvaTnqC4Pu0caESwi1eQUDI30eR2"],
   "nodes": {
-    "r1": {
+    "pc1": {
       "index": "0",
+      "shortname": "pc1",
+      "longname": "clab-basic-pc1",
+      "fqdn": "pc1.basic.io",
+      "group": "",
+      "labdir": "/home/ryan/ansible-labs/lab/topologies/clab-basic/pc1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fb1ebdf17fba",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ryan/ansible-labs/lab/topologies/clab-basic/pc1",
+        "clab-node-longname": "clab-basic-pc1",
+        "clab-node-name": "pc1",
+        "clab-node-type": "",
+        "clab-owner": "ryan",
+        "clab-topo-file": "/home/ryan/ansible-labs/lab/topologies/basic.clab.yml",
+        "containerlab": "basic"
+      },
+      "port-bindings": [
+      ]
+    },
+    "pc2": {
+      "index": "1",
+      "shortname": "pc2",
+      "longname": "clab-basic-pc2",
+      "fqdn": "pc2.basic.io",
+      "group": "",
+      "labdir": "/home/ryan/ansible-labs/lab/topologies/clab-basic/pc2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-fb1ebdf17fba",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ryan/ansible-labs/lab/topologies/clab-basic/pc2",
+        "clab-node-longname": "clab-basic-pc2",
+        "clab-node-name": "pc2",
+        "clab-node-type": "",
+        "clab-owner": "ryan",
+        "clab-topo-file": "/home/ryan/ansible-labs/lab/topologies/basic.clab.yml",
+        "containerlab": "basic"
+      },
+      "port-bindings": [
+      ]
+    },
+    "r1": {
+      "index": "2",
       "shortname": "r1",
       "longname": "clab-basic-r1",
       "fqdn": "r1.basic.io",
@@ -28,13 +90,13 @@
       "image": "frrouting/frr:latest",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-address": "172.20.20.6",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-238aa849240c",
+        "clab-mgmt-net-bridge": "br-fb1ebdf17fba",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/ryan/ansible-labs/lab/topologies/clab-basic/r1",
@@ -49,7 +111,7 @@
       ]
     },
     "r2": {
-      "index": "1",
+      "index": "3",
       "shortname": "r2",
       "longname": "clab-basic-r2",
       "fqdn": "r2.basic.io",
@@ -59,13 +121,13 @@
       "image": "frrouting/frr:latest",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-address": "172.20.20.2",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-238aa849240c",
+        "clab-mgmt-net-bridge": "br-fb1ebdf17fba",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/ryan/ansible-labs/lab/topologies/clab-basic/r2",
@@ -80,7 +142,7 @@
       ]
     },
     "radius": {
-      "index": "2",
+      "index": "4",
       "shortname": "radius",
       "longname": "clab-basic-radius",
       "fqdn": "radius.basic.io",
@@ -90,13 +152,13 @@
       "image": "ubuntu:22.04",
       "mgmt-net": "",
       "mgmt-intf": "",
-      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-address": "172.20.20.5",
       "mgmt-ipv4-prefix-length": 24,
-      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-238aa849240c",
+        "clab-mgmt-net-bridge": "br-fb1ebdf17fba",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/ryan/ansible-labs/lab/topologies/clab-basic/radius",
@@ -117,13 +179,13 @@
         "a": {
           "node": "r1",
           "interface": "eth1",
-          "mac": "aa:c1:ab:0b:43:51",
+          "mac": "aa:c1:ab:98:49:e0",
           "peer": "z"
         },
         "z": {
           "node": "r2",
           "interface": "eth1",
-          "mac": "aa:c1:ab:5c:57:a2",
+          "mac": "aa:c1:ab:4f:bf:20",
           "peer": "a"
         }
       }
@@ -133,13 +195,61 @@
         "a": {
           "node": "r1",
           "interface": "eth2",
-          "mac": "aa:c1:ab:df:ff:88",
+          "mac": "aa:c1:ab:b5:db:56",
           "peer": "z"
         },
         "z": {
           "node": "radius",
           "interface": "eth1",
-          "mac": "aa:c1:ab:df:db:36",
+          "mac": "aa:c1:ab:7e:54:49",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "r2",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:f0:49:e5",
+          "peer": "z"
+        },
+        "z": {
+          "node": "radius",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:fc:bb:59",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "pc1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:47:f8:38",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r1",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:f6:b0:c1",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "pc2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ce:30:7b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "r2",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:b7:1f:07",
           "peer": "a"
         }
       }

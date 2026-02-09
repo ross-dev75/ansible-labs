@@ -1,7 +1,16 @@
 - name: Bootstrap lab nodes
-  hosts: aaa
+  hosts:
+    - aaa
+    - workstations
   gather_facts: false
+
   tasks:
-    - name: Install python3 (needed for Ansible modules)
+    - name: Install python3 on Debian/Ubuntu targets (radius)
       ansible.builtin.raw: apt-get update && apt-get install -y python3
       changed_when: true
+      when: inventory_hostname == 'radius'
+
+    - name: Install python3 on Alpine targets (pc1/pc2)
+      ansible.builtin.raw: apk add --no-cache python3
+      changed_when: true
+      when: inventory_hostname in ['pc1', 'pc2']
