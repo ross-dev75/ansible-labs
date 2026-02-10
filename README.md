@@ -25,7 +25,7 @@ All components run locally.
 ## Documentation
 
 - [Getting Started](docs/01-getting-started.md)
-- [Lab Architecture](docs/02-lab-architecture.md)
+- [Starting Lab Architecture](docs/02-lab-architecture.md)
 - [Ansible Basics](docs/03-ansible-basics.md)
 
 ---
@@ -67,6 +67,7 @@ This lab is used to practice:
 ## Status
 
 This is an active learning environment that will expand over time as additional scenarios and tools are tested.
+
 
 
 
