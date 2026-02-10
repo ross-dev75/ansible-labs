@@ -169,4 +169,4 @@ marimo/_lsp/
 __marimo__/
 
 # Do not commit lab TLS material
-lab/topologies/clab-basic/.tls/
+topologies/clab-basic/.tls/

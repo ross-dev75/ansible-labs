@@ -71,7 +71,7 @@ containerlab version
 
 # Step 5 – Deploy Lab
 
-sudo containerlab deploy -t lab/topologies/basic.clab.yml
+sudo containerlab deploy -t topologies/basic.clab.yml
 
 Verify:
 
@@ -98,5 +98,5 @@ Success returns "pong".
 
 # Tear Down Lab
 
-sudo containerlab destroy -t lab/topologies/basic.clab.yml
+sudo containerlab destroy -t topologies/basic.clab.yml
 

@@ -34,7 +34,7 @@ All components run locally.
 
 1) Deploy the lab:
 
-sudo containerlab deploy -t lab/topologies/basic.clab.yml
+sudo containerlab deploy -t topologies/basic.clab.yml
 
 2) Bootstrap python to the 'aaa' and 'workstations' group:
 
@@ -48,7 +48,7 @@ ansible all -m ping -i inventories/lab/hosts.yml
 
 ## Tear Down
 
-sudo containerlab destroy -t lab/topologies/basic.clab.yml
+sudo containerlab destroy -t topologies/basic.clab.yml
 
 ---
 
