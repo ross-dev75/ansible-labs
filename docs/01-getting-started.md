@@ -81,7 +81,7 @@ docker ps --format "table {{.Names}}\t{{.Status}}"
 
 # Step 6 – Test Ansible
 
-ansible all -m ping -i inventories/lab/hosts.yml
+ansible all -m ping -i inventories/hosts.yml
 
 Success returns "pong".
 

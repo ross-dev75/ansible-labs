@@ -38,11 +38,11 @@ sudo containerlab deploy -t topologies/basic.clab.yml
 
 2) Bootstrap python to the 'aaa' and 'workstations' group:
 
-ansible-playbook -i inventories/lab/hosts.yml playbooks/bootstrap.yml
+ansible-playbook -i inventories/hosts.yml playbooks/bootstrap.yml
 
 3) Verify Ansible connectivity:
 
-ansible all -m ping -i inventories/lab/hosts.yml
+ansible all -m ping -i inventories/hosts.yml
 
 ---
 
