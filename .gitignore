@@ -208,3 +208,6 @@ __marimo__/
 
 # Do not commit lab TLS material
 lab/topologies/clab-basic/.tls/
+
+# Do not commit lab TLS material
+lab/topologies/clab-basic/.tls/
