@@ -1,4 +1,4 @@
-# 02 – Lab Architecture
+# 02 – Starting Lab Architecture
 
 This document explains how the Ansible lab is structured and why each component exists.
 
