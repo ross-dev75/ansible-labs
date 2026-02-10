@@ -14,7 +14,8 @@ Current components:
 - Docker-based lab hosts  
 - Containerlab for topology orchestration  
 - FRR containers acting as routers  
-- Ubuntu container for AAA/RADIUS testing  
+- Ubuntu container for AAA/RADIUS testing
+- Linux containers to act as workstations
 - Ansible as the automation tool  
 
 All components run locally.
@@ -66,5 +67,6 @@ This lab is used to practice:
 ## Status
 
 This is an active learning environment that will expand over time as additional scenarios and tools are tested.
+
 
 
